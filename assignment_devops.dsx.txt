@@ -15,7 +15,7 @@
 //            DCB=(RECFM=FB,LRECL=80,BLKSIZE=0)
 .
 .
-.****Comment added to Edit the file********
+.****Comment added to Edit the file on 6th April ********
 
 //SYSIN    DD * 
       SORT FIELDS=COPY 
