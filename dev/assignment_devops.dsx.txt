@@ -1,0 +1,25 @@
+.
+.
+.
+//SORTOF01 DD DSN=dataset1, 
+//            DISP=(NEW,CATLG,DELETE),UNIT=SYSDA,
+//            SPACE=(CYL,(1,4),RLSE), 
+//            DCB=(RECFM=FB,LRECL=80,BLKSIZE=0) 
+//SORTOF02 DD DSN=dataset2, 
+//            DISP=(NEW,CATLG,DELETE),UNIT=SYSDA,
+//            SPACE=(CYL,(1,4),RLSE), 
+//            DCB=(RECFM=FB,LRECL=80,BLKSIZE=0) 
+//SORTOF03 DD DSN=dataset3, 
+//            DISP=(NEW,CATLG,DELETE),UNIT=SYSDA,
+//            SPACE=(CYL,(1,4),RLSE), 
+//            DCB=(RECFM=FB,LRECL=80,BLKSIZE=0)
+.
+.
+.****Comment added to Edit the file on 6th April ********
+
+//SYSIN    DD * 
+      SORT FIELDS=COPY 
+      OUTFIL FILES=01,INCLUDE=(1,6,CH,EQ,C'MOHANK')
+      OUTFIL FILES=02,INCLUDE=(1,6,CH,EQ,C'SURESH')
+      OUTFIL FILES=03,INCLUDE=(1,6,CH,EQ,C'KRISHN')
+/* 
