@@ -1,6 +1,6 @@
+/.
 .
-.
-.
+. Approval 
 //SORTOF01 DD DSN=dataset1, 
 //            DISP=(NEW,CATLG,DELETE),UNIT=SYSDA,
 //            SPACE=(CYL,(1,4),RLSE), 
@@ -16,6 +16,7 @@
 .
 .
 .****Comment added to Edit the file on 6th April ********
+Final copy 4/9/2021 Approval from Manager
 
 //SYSIN    DD * 
       SORT FIELDS=COPY 
